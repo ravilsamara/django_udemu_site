@@ -11,9 +11,9 @@ from telebot.sendmessage import *
 
 def first_page(request):
     slider_list = CmsSlider.objects.all()
-    pc_1 = PriceCard.objects.get(pk=1)
-    pc_2 = PriceCard.objects.get(pk=2)
-    pc_3 = PriceCard.objects.get(pk=3)
+    pc_1 = PriceCard.objects.get(id=1)
+    pc_2 = PriceCard.objects.get(id=2)
+    pc_3 = PriceCard.objects.get(id=3)
     price_table = PriceTable.objects.all()
     form = OrderForms()
     dict_obj = {'slider_list': slider_list,
